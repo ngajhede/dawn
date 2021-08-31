@@ -1,0 +1,50 @@
+<!-- Welcome section starts -->
+<section class="marquee-wrapper">
+  <div class="marquee">
+    {% if section.settings.marquee-text != blank %}
+      <span class="text">
+        <span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+        </span>
+      </span>
+      <span class="text">
+        <span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+          <span class="stroke" data-text="{{ section.settings.marquee-text }}">{{ section.settings.marquee-text }}</span>
+        </span>
+      </span>
+    {% endif %}
+  </div>
+</section>
+<!-- Welcome section ends -->
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+      "id": "marquee-text",
+      "type": "text",
+      "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+      "name": "Welcome section Test",
+      "category": "ADVANCED LAYOUT"
+      }
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
